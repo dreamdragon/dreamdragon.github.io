@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Menglong Zhu's Homepage - Computer Vision & Robotics</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="5PB6n0inQZv8Z3kfaYtlbX7YHHDoiWS3J1EJT12MqD0" />
+<meta name="KEYWORDS" content="menglong zhu, computer vision, robotics, machine learning" />
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css.css?v=972015" media="screen" />
+<link rel="stylesheet" href="jquery-ui/themes/base/jquery-ui.css">
+<script src="jquery-ui/jquery-1.10.2.js"></script>
+<script src="jquery-ui/ui/jquery-ui.js"></script>
+  
+<style type="text/css">
+    #map_canvas { height: 100% }
+</style>
+<script type="text/javascript">
+    // from: http://www.robots.ox.ac.uk/~vedaldi/assets/hidebib.js
+    function hideallbibs()
+    {
+        var el = document.getElementsByTagName("div") ;
+        for (var i = 0 ; i < el.length ; ++i) {
+            if (el[i].className == "content") {
+                var bib = el[i].getElementsByTagName("pre") ;
+                if (bib.length > 0) {
+                    bib [0] .style.display = 'none' ;
+                }
+            }
+        }
+    }
+
+    function togglebib(paperid)
+    {
+        var paper = document.getElementById(paperid) ;
+        var bib = paper.getElementsByTagName('pre') ;
+        if (bib.length > 0) {
+            if (bib [0] .style.display == 'none') {
+                bib [0] .style.display = 'block' ;
+            } else {
+                bib [0] .style.display = 'none' ;
+            }
+        }
+    }
+</script>
+
+
+</head>
+
+<body>
+
+
+
+<div id="container"> 
+
+<div id="header">
+<div class="headtitle">Menglong Zhu</div>
+<div class="headerpic"><img src="profile.jpg" /></div>
+</div>
+
+<div id="menu"> 
+<ul>
+<li><a href="index.html" class="selected" title="">HOME</a></li>
+<li><a href="project.html" title="">RESEARCH</a></li>
+</ul>
+</div>
+
+  <div id="content"> 
+    <div id="insidecontent"> <br>
+
+      <h1>About Me</h1>
+
+      <div class="content">
+
+          <strong><a href='CV_Menglong_Zhu.pdf?v=Oct15' 
+                  target="_blank">CV</a></strong>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <strong>Contact</strong>: menglong AT cis.upenn.edu
+          <br /> <br />
+
+          I'm a PhD student in Computer Information Science, 
+          <a href="https://www.grasp.upenn.edu/" 
+              target="_blank">GRASP Lab</a>,
+          University of Pennsylvania, advised by 
+          <a href='http://www.seas.upenn.edu/~kostas/' 
+              target="_blank">Kostas Daniilidis</a>.  
+          My research interests are Computer Vision, Robotics and Machine Learning, 
+          specialized in <strong>object recognition, 3D object/human pose estimation, 
+              human action recognition, visual SLAM and text recognition</strong>.
+          I obtained a Bachelor's degree in Computer Science from  
+          <a href='http://www.fudan.edu.cn/' 
+              target="_blank">Fudan University</a> in 2010 and a Master's degree in
+          Robotics from the <a href='http://www.upenn.edu/' 
+              target="_blank">University of Pennsylvania</a> in 2012.
+
+	<br/><br/>
+    <strong>[UPDATE]:</strong> I will be joining <strong>Google</strong> in Dec. 2015!
+      </div>
+
+
+      <h1>Code</h1>
+
+      <div class="content">
+          <div class="bullet">
+              <div class="name">
+              <a href="http://dreamdragon.github.io/ADPM/" 
+                  target="_blank"><strong>ADPM</strong></a>
+              </div>
+              <div class="detail">
+              Fast object detector - Active Deformable Part Models. 
+              </div>
+          </div>
+
+          <div class="bullet">
+              <div class="name">
+                  <a href="http://dreamdragon.github.io/vatic/" 
+                      target="_blank"><strong>Vatic-Action</strong></a>
+              </div>
+              <div class="detail">
+                Video annotation tool for human joints, Amazon Mturk deployable.
+              </div>
+          </div>
+          <div class="bullet">
+              <div class="name">
+                  <a href="https://github.com/dreamdragon/Solve3Plus1" 
+                      target="_blank"><strong>Solve3Plus1</strong></a> 
+              </div>
+              <div class="detail">
+                  Camera pose estimation, involved in
+                  <a href="https://www.google.com/atap/projecttango/#project" 
+                      target="_blank"><strong>Google Project Tango</strong></a>.
+              </div>
+          </div>
+
+          <div class="bullet">
+              <div class="name">
+                  <a href="http://www.ros.org/wiki/literate_pr2" 
+                      target="_blank"><strong>Literate PR2</strong></a>
+              </div>
+              <div class="detail">
+                  Text detection and recognition, ROS package, PR2 deployable.
+              </div>
+          </div>
+
+          <div class="bullet">
+              <div class="name">
+                  <a href="http://dreamdragon.github.io/2D-planning/" 
+                      target="_blank"><strong>Quadtree2D</strong></a>
+              </div>
+              <div class="detail">
+                  Fast A* planning algorithm with quadtree decomposition.
+              </div>
+          </div>
+      </div>
+
+
+      <h1>Datasets</h1>
+      <div class="content">
+          <div class="bullet">
+              <div class="name">
+                  <a href="http://dreamdragon.github.io/PennAction/" 
+                      target="_blank"><strong>Penn Action</strong></a>
+              </div>
+              <div class="detail">
+                  15-class action dataset, frame-by-frame annotated human body joints.
+              </div>
+          </div>
+      </div>
+
+      <h1>Publications</h1>
+
+        <div class="content" id="zhuPSP">
+        <div class="block">
+            <div class="image">
+            <img src="figures/popup.jpg" alt="Illustration">
+            </div>
+            <div class="detail">
+              <strong>1. Single Image Pop-Up from Discriminatively Learned Parts<br/>  </strong> 
+            M. Zhu*, X. Zhou* and K. Daniilidis, &nbsp;&nbsp; *Equal Contribution<br />
+            <i>International Conference on Computer Vision (<strong>ICCV</strong>), 2015.</i><br/>
+            [<a href="papers/Zhu_popup_iccv15.pdf" target="_blank">PDF</a>
+              / <a class="video" href="http://www.youtube.com/watch?v=Wttqb0GSGjg" 
+              embed="http://www.youtube.com/embed/Wttqb0GSGjg?vq=hd720&autoplay=1" 
+              target="_blank">video</a>]
+
+            </div>
+        </div>
+        </div>
+
+        <div class="content" id="human-robot">
+        <div class="block">
+            <div class="image">
+            <img src="figures/Zhou_matching_iccv15.jpg" alt="Illustration">
+            </div>
+            <div class="detail">
+            <strong>2. Multi-Image Matching via Fast Alternating Minimization  <br/> </strong> 
+            X. Zhou, M. Zhu and K. Daniilidis,<br />
+            <i>International Conference on Computer Vision (<strong>ICCV</strong>), 2015.</i> <strong>(Oral)</strong>  <br/> [<a href="papers/Zhou_matching_iccv15.pdf" target="_blank">PDF</a>]
+            </div>
+        </div>
+        </div>
+
+
+      <div class="content" id="zhuADPM2014">
+      <div class="block">
+            <div class="image">
+            <img src="figures/Zhu_ADPM_eccv14.jpg" alt="Illustration">
+            </div>
+            <div class="detail">
+          <strong>3. Active Deformable Part Models Inference </strong> <br/>
+          M. Zhu, N. Atanasov, G. J. Pappas, and K. Daniilidis,<br />
+          <i>European Conference on Computer Vision (<strong>ECCV</strong>), 2014. </i> <br/>
+          [<a href="papers/Zhu_ADPM_eccv14.pdf" target="_blank">PDF</a>
+          / <a class="bib" href="javascript:togglebib('zhuADPM2014')" class="togglebib" >bibtex</a>
+          / <a class="video" href="http://www.youtube.com/watch?v=7Y8akHFQo3c" 
+              embed="http://www.youtube.com/embed/7Y8akHFQo3c?vq=hd720&autoplay=1" 
+              target="_blank">video</a>
+          / <a href="http://dreamdragon.github.io/ADPM/" 
+          target="_blank">project page (code)</a>]
+           </div>
+          </div>
+          <pre xml:space="preserve">
+@InProceedings{ZhuADPM2014,
+  author    = {M. Zhu and N. Atanasov and G. Pappas and K. Daniilidis},
+  title     = {{Active Deformable Part Models Inference}},
+  year      = {2014},
+  booktitle = {European Conference on Computer Vision (ECCV)}
+}         </pre>
+      </div>
+
+
+      <div class="content" id="AtanasovIJRR15">
+      <div class="block">
+            <div class="image">
+            <img src="figures/semantic_slam.png" alt="Illustration">
+            </div>
+            <div class="detail">
+          <strong>4. Localization from Semantic Observations <br/>via the Matrix Permanent </strong> <br/>
+          N. Atanasov, M. Zhu, K. Daniilidis and G. J. Pappas<br />
+          <i> International Journal of Robotics Research (<strong>IJRR</strong>), 2015. </i><br />
+          [<a class="bib" href="javascript:togglebib('AtanasovIJRR15')" class="togglebib" >bibtex</a>
+           / <a class="video" href="http://www.youtube.com/watch?v=k1Z621JffGg" 
+              embed="http://www.youtube.com/embed/k1Z621JffGg?vq=hd720&autoplay=1" 
+              target="_blank">video</a>]
+          </div>
+          </div>
+          <pre xml:space="preserve">
+@Article{Atanasov_SemanticLocalization_IJRR15,
+  author = {N. Atanasov and M. Zhu and K. Daniilidis and G. Pappas},
+  title = {{Localization from Semantic Observations via the Matrix Permanent}},
+  year = {2015},
+  journal = {International Journal of Robotics Research}
+}         </pre>
+      </div>
+
+      <div class="content" id="AtanasovRSS14">
+      <div class="block">
+            <div class="image">
+            <img src="figures/Semantic_Localization_RSS14.jpg" alt="Illustration">
+            </div>
+            <div class="detail">
+          <strong>5. Semantic Localization Via the Matrix Permanent </strong> <br/>
+          N. Atanasov, M. Zhu, K. Daniilidis and G. J. Pappas<br />
+          <i> Robotics: Science and Systems (<strong>RSS</strong>), 2014. </i><br />
+          [<a href="papers/Semantic_Localization_RSS14.pdf" target="_blank">PDF</a>
+          / <a class="bib" href="javascript:togglebib('AtanasovRSS14')" class="togglebib" >bibtex</a>
+          / <a class="video" href="http://www.youtube.com/watch?v=P3JuOT6kKM0" 
+              embed="http://www.youtube.com/embed/P3JuOT6kKM0?vq=hd720&autoplay=1" 
+              target="_blank">video</a>]
+          </div>
+          </div>
+          <pre xml:space="preserve">
+@InProceedings{Atanasov_SemanticLocalization_RSS14,
+  author = {N. Atanasov and M. Zhu and K. Daniilidis and G. Pappas},
+  title = {{Semantic Localization Via the Matrix Permanent}},
+  year = {2014},
+  booktitle={Robotics: Science and Systems (RSS)}
+}         </pre>
+      </div>
+
+      <div class="content" id="zhu2014grasping">
+      <div class="block">
+            <div class="image">
+            <img src="figures/icra2014_object_grasping.jpg" alt="Illustration">
+            </div>
+            <div class="detail">
+          <strong>6. Single Image 3D Object Detection and Pose Estimation <br/>
+              for Grasping </strong> <br/>
+          M. Zhu, K. Derpanis, Y. Yang, S. Brahmbhatt, 
+          M. Zhang, <br/>C. Phillips, M. Lecce and K. Daniilidis,<br />
+          <i>International Conference on Robotics and Automation(<strong>ICRA</strong>),2014.</i> <br /> 
+          [<a href="papers/icra2014_object_grasping.pdf" target="_blank">PDF</a>
+          / <a class="bib" href="javascript:togglebib('zhu2014grasping')" class="togglebib" >bibtex</a>
+          / <a class="video" href="http://www.youtube.com/watch?v=lLKxeaj6EMo" 
+              embed="http://www.youtube.com/embed/lLKxeaj6EMo?vq=hd720&autoplay=1" 
+              target="_blank">video</a>
+          / <a href="outdoor-3d-objects.html" target="_blank">project page</a>]
+          </div>
+          </div>
+          <pre xml:space="preserve">
+@article{zhu2014grasping,
+  title     = {Single Image 3D Object Detection 
+               and Pose Estimation for Grasping},
+  author    = {Zhu, Menglong and Derpanis, Konstantinos G 
+               and Yang, Yinfei and Brahmbhatt, Samarth 
+               and Zhang, Mabel and Phillips, Cody 
+               and Lecce, Matthieu and Daniilidis, Kostas}
+  booktitle = {International Conference on Robotics and Automation}
+  year      = {2014} 
+}         </pre>
+      </div>
+
+      
+
+      <div class="content" id="zhang2013actemes">
+      <div class="block">
+            <div class="image">
+            <img src="figures/iccv13_acteme.jpg" alt="Illustration">
+            </div>
+            <div class="detail">
+          <strong>7. From Actemes to Action: A Strongly-supervised <br/> Representation
+              for Detailed Action Understanding</strong> <br/>
+          W. Zhang, M. Zhu and K. Derpanis, <br />
+          <i>International Conference on Computer Vision (<strong>ICCV</strong>), 2013.</i> <br />
+          [<a href="papers/iccv13_acteme.pdf" target="_blank">PDF</a>
+          / <a class="bib" href="javascript:togglebib('zhang2013actemes')" class="togglebib" >bibtex</a>
+          / <a class="video" href="http://www.youtube.com/watch?v=RjlFNGINFwE" 
+              embed="http://www.youtube.com/embed/RjlFNGINFwE?vq=hd720&autoplay=1" 
+              target="_blank">video</a>
+          / <a href="http://dreamdragon.github.io/vatic/" 
+              target="_blank">project page</a>
+          / <a href="http://dreamdragon.github.io/PennAction/" 
+              target="_blank">action dataset</a>]
+              </div>
+              </div>
+          <pre xml:space="preserve">
+@inproceedings{zhang2013actemes,
+  title     = {From Actemes to Action: A Strongly-supervised 
+               Representation for Detailed Action Understanding},
+  author    = {Zhang, Weiyu and Zhu, Menglong 
+               and Derpanis, Konstantinos G},
+  booktitle = {International Conference on Computer Vision},
+  pages     = {2248--2255},
+  year      = {2013},
+}         </pre>
+      </div>
+
+
+      <div class="content" id="zhu2012monocular">
+      <div class="block">
+            <div class="image">
+            <img src="figures/mono-visual-odom-eccv2012.jpg" alt="Illustration">
+            </div>
+            <div class="detail">
+          <strong>8. Monocular Visual Odometry and Dense 3D Reconstruction 
+              <br/>for On-Road Vehicles</strong> <br/>
+          M. Zhu, S. Ramalingam, Y. Taguchi and T. Garass, <br />
+          <i>European Conference on Computer Vision (<strong>ECCV</strong>),
+          CVVT , 2012. </i> <br />
+          [<a href="papers/mono-visual-odom-eccv2012-workshop.pdf" 
+              target="_blank">PDF</a> 
+          / <a class="bib" href="javascript:togglebib('zhu2012monocular')" class="togglebib" >bibtex</a>
+          / <a class="video" href="http://www.youtube.com/watch?v=2Ym9N0ZGGB4" 
+              embed="http://www.youtube.com/embed/2Ym9N0ZGGB4?vq=hd480&autoplay=1" 
+              target="_blank">video</a>]
+              </div>
+              </div>
+          <pre xml:space="preserve">
+@inproceedings{zhu2012monocular,
+  title     = {Monocular visual odometry and dense 3d 
+               reconstruction for on-road vehicles},
+  author    = {Zhu, Menglong and Ramalingam, Srikumar 
+               and Taguchi, Yuichi and Garaas, Tyler},
+  booktitle = {European Conference on Computer Vision, 
+               Workshops and Demonstrations},
+  pages     = {596--606},
+  year      = {2012},
+}         </pre>
+      </div>
+
+      <div class="content" id="zhuPSP">
+      <div class="block">
+            <div class="image">
+            <img src="figures/popup.jpg" alt="Illustration">
+            </div>
+            <div class="detail">
+            <strong>9. Pose and Shape Estimation with  Discriminatively <br/> Learned Parts  <br/>  </strong> 
+            M. Zhu, X. Zhou and K. Daniilidis, <br />
+            <strong> [Technical Report] </strong> <i>arXiv:1502.00192 [cs.CV], 2015.</i><br/>
+            [<a href="http://arxiv.org/pdf/1502.00192v1.pdf" target="_blank">PDF</a>
+            / <a class="bib" href="javascript:togglebib('zhuPSP')" class="togglebib" >bibtex</a>]
+            </div>
+            </div>
+            <pre xml:space="preserve">
+@article{ZhuADPM14arxiv,
+  author    = {Menglong Zhu and
+               Xiaowei Zhou and
+               Kostas Daniilidis},
+  title     = {Pose and Shape Estimation with Discriminatively Learned Parts},
+  journal   = {CoRR},
+  volume    = {abs/1502.00192},
+  year      = {2015},
+  ee        = {http://arxiv.org/abs/1502.00192},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}         </pre>
+     </div>
+
+      <div class="content" id="zhuADPM14arc">
+      <div class="block">
+            <div class="image">
+            <img src="figures/Zhu_ADPM_eccv14.jpg" alt="Illustration">
+            </div>
+            <div class="detail">
+          <strong>10. Active Deformable Part Models  <br/> </strong>
+          M. Zhu, N. Atanasov, G. J. Pappas, and K. Daniilidis, <br />
+          <strong> [Technical Report] </strong> <i>arXiv:1404.0334 [cs.CV], 2014.</i><br/>
+          [<a href="http://arxiv.org/pdf/1404.0334v2.pdf" target="_blank">PDF</a>
+          / <a class="bib" href="javascript:togglebib('zhuADPM14arc')" class="togglebib" >bibtex</a>]</div></div>
+          <pre xml:space="preserve">
+@article{ZhuADPM14arxiv,
+  author    = {Menglong Zhu and
+               Nikolay Atanasov and
+               George J. Pappas and
+               Kostas Daniilidis},
+  title     = {Active Deformable Part Models},
+  journal   = {CoRR},
+  volume    = {abs/1404.0334},
+  year      = {2014},
+  ee        = {http://arxiv.org/abs/1404.0334},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}         </pre>
+     </div>
+
+      <div class="content">
+      <div class="block">
+            <div class="image">
+            <img src="figures/literate_pr2.jpg" alt="Illustration">
+            </div>
+            <div class="detail">
+          <strong>11. Literate PR2: Text detection and recognition for <br/>
+               indoor environment</strong> <br/>
+          M. Zhu, K. Derpanis, K. Daniilidis, <br />
+          <strong> [Open Source] </strong><i>Robotics Operating System (ROS), 2011.</i>  <br />
+          [<a href="http://wiki.ros.org/literate_pr2" 
+              target="_blank">ROS wiki</a> 
+          / <a class="video" href="http://www.youtube.com/watch?v=AYeApDjsmpQ" 
+              embed="http://www.youtube.com/embed/AYeApDjsmpQ?vq=hd720&autoplay=1" 
+              target="_blank">video</a>] 
+              </div></div>
+      </div>
+
+
+      <h1>Patents</h1>
+
+      <div class="content">
+          <strong>Method and System for Determining Poses of Vehicle-Mounted 
+              Cameras <br/>for In-Road Obstacle Detection,</strong> US 20140037136 A1.<br/>
+          M. Zhu, S. Ramalingam and Y. Taguchi, 
+          [<a href="http://www.google.com/patents/US20140037136" target="_blank">Link</a>] 
+          
+
+      </div>
+
+
+      <h1>Invited Talks</h1>
+      <div class="content">
+          April 09, 2014, <a href="http://www.ri.cmu.edu/event_detail.html?event_id=890&&menu_id=422&event_type=seminars" 
+              target="_blank"><strong>VASC Seminar at CMU</strong></a>
+      </div>
+
+      <h1>Teaching</h1>
+      <div class="content">
+          <div class="bullet">
+              Advanced Robotics, 2015 Spring,
+              <a href="http://alliance.seas.upenn.edu/~meam620/wiki/" 
+              target="_blank"><strong>Learn to program a quadrotor</strong></a>
+          </div>
+          <div class="bullet">
+          Machine Perception, 2013 Spring 
+          </div>
+          <div class="bullet">
+          Machine Learning, 2012 Fall, <a href="http://www.bentaskar.com/" 
+              target="_blank"><strong>Remebering Ben Taskar</strong></a> 
+          </div>
+          <div class="bullet">
+          Introduction to Computer Programming, 2012 Spring 
+          </div>
+          <div class="bullet">
+          Programming Languages and Techniques III, 2011 Spring 
+          </div>
+          <div class="bullet">
+          Programming Languages and Techniques III, 2011 Fall 
+          </div>
+      </div>
+
+      <br /> <br />
+  </div>
+
+
+  <div style="clear: both;"></div>
+  </div>
+
+  <div id="footer"> 
+  </div>
+
+</div>
+
+<script type="text/javascript">
+    //$( ".content .dialog" ).hide();
+    $( ".content .video" ).click(function() {
+        var vdialog = $('<div class="dialog" title="Project Video"><iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe></div>');
+        vdialog.children("iframe").attr("src", $(this).attr("embed"));
+        vdialog.insertAfter($(this));
+        vdialog.dialog({ draggable: false, autoOpen: false, 
+            width: 585, height: 365, 
+            close: function(event, ui) { $(".dialog").remove()} });
+        vdialog.dialog("open");
+        return false;
+        });
+</script>
+
+
+<script xml:space="preserve" language="JavaScript">
+    hideallbibs();
+</script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=7399665; 
+var sc_invisible=1; 
+var sc_security="3f2f776a"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="hit
+tracking tool" href="http://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/7399665/0/3f2f776a/0/"
+alt="hit tracking tool"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

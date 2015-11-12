@@ -1,0 +1,244 @@
+body
+{
+	font-size:       62.5%; 
+	margin:          0;
+	padding:         0;
+	/*background-color: #000;*/
+	background-color: #000;
+	/*background-color: #222;*/
+	font-family:     'lucida grande', arial, tahoma, sans-serif;
+}
+
+#container
+{
+	margin:          0 auto;
+	padding-top:     20px;
+	width:           743px;
+	position:        relative;
+	background-color:  #333;
+}
+
+#header
+{
+	position:        relative;
+	margin:          0 auto;
+	width:           700px;
+	height:          270px;
+	background:      transparent url('blue_sky.jpg') top left no-repeat;
+}
+
+.headtitle
+{
+	position:        relative;
+	font-family:     Times;
+	/*font-family:     'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+	font-size:       30px;
+	color:           #FFF;
+	top:             210px;
+	left:            12px;
+}
+
+.headerpic
+{
+	position:        absolute;
+	top:             40px;
+	left:            505px;
+}
+
+#header img
+{
+	position:        relative;
+    width:           138px; 
+    border:          3px solid;
+	/*
+    height:          200px;
+	top:             -27px;
+	left:            480px;*/
+}
+
+#menu
+{
+	margin:          0 20px;
+	height:          29px;
+	padding:         5px 0;
+}
+
+#menu ul
+{
+	margin:          0;
+	padding:         7px;
+	height:          29px;
+}
+
+#menu ul li
+{
+	list-style:      none;
+	display:         inline;
+}
+
+#menu ul li a:link,  #menu ul li a:active, #menu ul li a:visited
+{
+	color:           #767676;	
+	padding:         10px 7px 10px 7px;
+	font-size:       1em;
+
+	font-family:     'lucida grande', arial, sans-serif;
+	font-weight:     bold;
+	text-decoration: none;
+}
+
+#menu ul li a.selected
+{
+	color:           #FDFDFD;
+}
+
+#menu ul li a:hover
+{
+	background-color:   #6A7919;
+	color:           #FDFDFD;
+}
+
+
+#content
+{
+	min-height:      390px;
+	width:           700px;
+	margin:          0 auto;
+	/*background-color:#FDFDFD;*/
+	/*background-color: #f3f2ee;*/
+	background-color: #f2f2f2;
+}
+
+#insidecontent
+{
+	float:           left;
+	padding-left:    25px;
+	padding-right:   25px;
+	width:           auto;
+}
+
+/*#insidecontent p
+{
+	margin:          0;
+	color:           #585858;
+	font-family:     Tahoma;
+	font-size:       1.3em;
+	line-height:     165%;
+}*/
+
+#insidecontent a
+{
+	color:           #428bca;
+	font-weight:     bold;
+}
+
+#insidecontent .content 
+{
+	margin:          0;
+	padding-top:     10px;
+	padding-bottom:  10px;
+	padding-left:    5px;
+	padding-right:   0px;
+	color:           #555555;
+	font-family:     "Skolar Regular","Roboto Slab","Droid Serif",Cambria,Georgia,"Times New Roman",Times,serif;/*Tahoma;*/
+	font-size:       1.5em;
+	line-height:     150%;
+}
+
+
+
+h1
+{
+	padding-top:     15px;
+    padding-bottom:  15px;
+	margin:          0;
+	font-weight:     bold;
+	/*color:           #6A7919;*/
+	color:           #343434;
+	font-size:       2.5em;
+	font-family:     'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background:      url('bg_hr.png') repeat-x bottom;
+}
+
+h2
+{
+	margin:          0;
+	display:         inline;
+	position:        relative;
+	top:             -1.5em;
+	left:            2em;
+	font-size:       1.8em;
+	font-weight:     normal;
+	color:           #94c258;
+}
+
+h3
+{
+	margin:          0;
+	font-size:       1.5em;
+	font-weight:     normal;
+	color:           #94C258;
+}
+
+#footer
+{
+	margin:          0 auto;
+	width:           641px;
+	height:          39px;
+
+}
+
+#footer span
+{
+	display:         block;
+	position:        relative;
+	font-family:    Tahoma;
+	font-size:       1.2em;
+	padding:         10px;
+	color:           #767676;
+}
+
+div .bullet{
+    overflow:hidden;
+}
+div .bullet .name{
+    width:100px;
+    display:inline;
+    float:left;
+    text-align:left;
+}
+div .bullet .detail{
+    margin-left:10px;
+    width: 500px;
+    display:inline;
+    float:left;
+}
+
+div .block{
+    overflow:hidden;
+    height: 160px;
+    background: url('bg_hr.png') repeat-x bottom;
+}
+div .block .detail{
+    margin-left:10px;
+    display:inline;
+    float:left;
+}
+div .block .image{
+    width:150px;
+    display:inline;
+    float:left;
+    text-align:left;
+    margin-left:0px;
+    margin-right:10px;
+}
+div .block .image img{
+	width:150px;
+	float:left;
+	display:inline;
+	border-radius: 3px;
+	border-style: solid;
+    border-color: #000000;
+    border-width: 2px;
+    vertical-align: middle;
+}
